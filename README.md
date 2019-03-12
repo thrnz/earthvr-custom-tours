@@ -1,5 +1,5 @@
 # Google Earth VR Custom Tour Generator
-A Basic custom tour generator for Google Earth VR
+A basic custom tour generator for Google Earth VR
 
 https://earthvr-custom-tours.appspot.com
 
