@@ -1,30 +1,14 @@
-# earthvr-custom-tours
-Basic custom tour generator for Google Earth VR
+# Google Earth VR Custom Tour Generator
+A Basic custom tour generator for Google Earth VR
 
-More info at:
+https://earthvr-custom-tours.appspot.com
 
-https://earthvr-custom-tours.appspot.com/
+### Self Hosting
 
-https://www.reddit.com/r/Vive/comments/5rzig6/google_earth_vr_custom_tour_generator/
-
-
-Self host using Docker: 
+A pre-made Docker image is available for easy self hosting, however a valid Google Maps API key is needed to retireve elevation data. See [here](https://developers.google.com/maps/documentation/elevation/start) for more info.
 
 ```
 docker run -p 80:80 \
     -e MAPS_API_KEY=xxxxxx \
     thrnz/earthvr-custom-tours    
-```
-
-Or Docker-compose:
-```
-version: '3'
-services:
-    web:
-        image: thrnz/earthvr-custom-tours
-        environment:
-            MAPS_API_KEY: xxxxxx
-        ports:
-            - 80:80
-
 ```
