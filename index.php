@@ -31,6 +31,7 @@
 <p>If you save a destination that is too close to the ground, then you may appear underground when it appears during the tour. This is because I'm not sure how to pull the appropriate elevation data from the JPG metadata, and rely on data from the Google Maps Elevation API instead.</p>
 <p>To include looping background audio, place an .ogg file named 'bgaudio1.ogg' in the same folder as earthVR.textpb. This will play throughout the entire tour.</p>
 <p>To include destination specific audio, place a DESTNAME.ogg file in the same folder as earthVR.textpb, where DESTNAME is the name of the corresponding .JPG. Eg: include 'Christchurch_Central.ogg' to play audio when visiting 'Christchurch_Central.jpg'.</p>
+<p>You may experience a lack of audio when using filenames with non-standard characters. This may be an issue with both .ogg files and the tour's folder name itself. You may need to manually edit the tour file's 'audio_resource' entries in order to fix this.</p>
 </form>
 
 </body>
